@@ -1,0 +1,343 @@
+/* start navbar for project */
+body {
+  background-color: #303030;
+  color: white;
+  scroll-behavior: smooth;
+}
+:root{
+  --main-color:rgb(20 247 150);
+}
+span
+{
+  color: var(--main-color);
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.navbar {
+  padding: 0%;
+  height: 70px;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+.navbar button {
+  background-color: white;
+  border: none;
+  border: rgba(0, 0, 0, 0.2) solid 0.25px;
+  border-radius: 5px;
+  padding: 3px 6px;
+}
+.navbar button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.navbar span {
+  font-size: 16px;
+  color: black;
+  width: 30px;
+  transform: scale(0.9);
+}
+.navbar-light .navbar-brand {
+  font-size: 30px;
+  opacity: 0.9;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.navbar-collapse {
+  display: flex;
+  justify-content: flex-end;
+  z-index: 5;
+  background-color: white;
+  border-top: rgba(0, 0, 0, 0.1) solid 0.25px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.put {
+  display: block;
+}
+nav ul li {
+  margin-bottom: 10px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-right: 20px;
+  opacity: 0.7;
+}
+nav ul li a:hover {
+  color: black;
+  opacity: 1;
+}
+nav ul li a.active {
+  color: royalblue;
+}
+@media (max-width: 768px) {
+  .volum {
+    padding: 0;
+  }
+  nav a {
+    margin-left: 5%;
+  }
+  nav button {
+    margin-right: 5%;
+  }
+}
+@media (min-width: 768px) {
+  .navbar button {
+    display: none;
+  }
+  .navbar-collapse {
+    border: none;
+  }
+}
+/* End navbar for project */
+/* start home for project */
+.home {
+  height: 650px;
+  background-image: url("../imgs/im8.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  z-index: 1;
+}
+.home::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.home .company {
+  width: 90%;
+  position: absolute;
+  top: 35%;
+  left: 5%;
+  z-index: 3;
+}
+.home .company p {
+  font-size: 45px;
+  color: white;
+}
+
+.home .company button {
+  padding: 10px 20px;
+  font-weight: bold;
+  background-color: transparent;
+  margin: 40px 0 0 30px;
+  border-color: white;
+  border-width: 1px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.home .company a {
+  text-decoration: none;
+  color: var(--main-color);
+  font-size: 20px;
+}
+
+.home .company button:hover {
+  color: white;
+  transition: 0.5s;
+  border-color: #02be6e;
+  background-color: #02be6e;
+}
+
+@media (max-width: 768px) {
+  .home .company {
+    width: 90%;
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    z-index: 3;
+  }
+}
+/* Start About */
+
+.about h1 {
+  text-align: center;
+  padding-top: 60px;
+  margin-bottom: 90px;
+}
+.about .call {
+  display: inline-flex;
+}
+.about .call i {
+  border: white solid 1px;
+  padding: 10px 20px;
+  line-height: 1.6;
+  margin-right: 20px;
+}
+.about .call h4 {
+  line-height: 1.6;
+}
+.about p {
+  padding-left: 20%;
+}
+/* end About */
+/* Start portfolio */
+.portfolio h2 {
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 30px;
+}
+.portfolio .row div {
+  padding: 0;
+  height: 200px;
+}
+.portfolio img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+/* end portfolio */
+/* Start service */
+.service h2 {
+  text-align: center;
+  padding-top: 100px;
+  margin-bottom: 40px;
+}
+.service .row div,
+p {
+  padding-left: 20px;
+}
+.service .daily:hover {
+  background-color: #505050;
+  transition: 0.5s;
+}
+.service .industry {
+  background-color: #505050;
+}
+.service .work i {
+  border: white solid 1px;
+  padding: 15px 25px;
+  line-height: 1.6;
+  font-size: 40px;
+  margin: 50px 0 15px 0;
+}
+.service p {
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+/* end service */
+/* Start team */
+.team .row {
+  justify-content: center;
+}
+.team h3 {
+  text-align: center;
+  padding-top: 100px;
+  margin-bottom: 40px;
+  font-size: 50px;
+}
+.team .card {
+  padding: 0;
+  border: none;
+  width: 260px;
+  margin: 10px;
+}
+
+.team .card:hover {
+  transform: translateY(-10px);
+  opacity: 0.5;
+  transition: 0.5s;
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+}
+
+.team img {
+  height: 250px;
+}
+.team .card-body {
+  background-color: #505050;
+  padding-left: 30px;
+}
+.team .card-text {
+  padding: 0;
+  line-height: 2;
+}
+/* end team */
+/* Start contact us */
+.contact {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding-bottom: 40px;
+}
+.contact h5 {
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: 50px;
+  font-size: 50px;
+}
+.contact span {
+  color: #7aff43;
+  line-height: 3;
+}
+.contact input {
+  background-color: transparent;
+  width: 90%;
+  padding: 10px 10px;
+  border: #02be6e solid 0.5px;
+  color: #7aff43;
+}
+.contact input:focus {
+  outline: none;
+}
+.contact textarea {
+  border: #02be6e solid 0.5px;
+  background-color: transparent;
+  width: 90%;
+  padding-left: 10px;
+  color: #7aff43;
+  margin-bottom: 20px;
+}
+.contact textarea:focus {
+  outline: none;
+}
+input[type="submit"] {
+  background-color: #02be6e;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+input[type="submit"]:hover {
+  background-color: transparent;
+  transition: 0.5s;
+}
+.contact h2 {
+  margin-top: 35px;
+}
+.contact p {
+  line-height: 2;
+
+  margin: 20px 0 30px 0;
+}
+.contact i {
+  border: white solid 1px;
+  padding: 10px 20px;
+  line-height: 1.6;
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+/* end contact us */
+/* Start copy right */
+.copy-right {
+  padding-top: 10px;
+  text-align: center;
+}
+/* end copy right */
